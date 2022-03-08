@@ -27,7 +27,7 @@ public class TestDemo {
 		try {
 			InputStream	 mybatisMappingInput=
 					Resources.getResourceAsStream("SqlMapConfig.xml");
-			SqlSessionFactory sessionFac=sqlSeBuilder.build(mybatisMappingInput);
+			SqlSessionFactory sessionFac= sqlSeBuilder.build(mybatisMappingInput);
 			//3.获得sqlSession对象
 			SqlSession sqlSession=sessionFac.openSession();
 			System.out.println(sqlSession);
